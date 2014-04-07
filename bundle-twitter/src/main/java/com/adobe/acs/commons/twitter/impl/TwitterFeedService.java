@@ -1,8 +1,8 @@
 /*
  * #%L
- * ACS AEM Commons Bundle
+ * ACS AEM Commons Twitter Support Bundle
  * %%
- * Copyright (C) 2013 Adobe
+ * Copyright (C) 2013 - 2014 Adobe
  * %%
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -17,8 +17,14 @@
  * limitations under the License.
  * #L%
  */
-/**
- * Miscellaneous WCM Utilities.
- */
-@aQute.bnd.annotation.Version("1.1.0")
-package com.adobe.acs.commons.wcm;
+package com.adobe.acs.commons.twitter.impl;
+
+import javax.jcr.RepositoryException;
+
+import org.apache.sling.api.resource.ResourceResolver;
+
+public interface TwitterFeedService {
+
+    void refreshTwitterFeedComponents(ResourceResolver resourceResolver) throws RepositoryException;
+
+}

@@ -18,7 +18,7 @@
  * #L%
  */
 /**
- * Miscellaneous WCM Utilities.
+ * Email Service.
  */
-@aQute.bnd.annotation.Version("1.1.0")
-package com.adobe.acs.commons.wcm;
+@aQute.bnd.annotation.Version("1.0.0")
+package com.adobe.acs.commons.email;
