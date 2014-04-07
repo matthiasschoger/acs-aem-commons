@@ -50,8 +50,7 @@ public class MapBasedModelAdapterFactoryTest {
 
         ModelAdapterFactory factory = new MapBasedModelAdapterFactory(testValues);
 
-        Resource resource = mock(Resource.class);
-        Rectangle rectangle = factory.getAdapter(resource, Rectangle.class);
+        Rectangle rectangle = factory.getAdapter(mock(Resource.class), Rectangle.class);
 
         assertEquals(6, rectangle.getWidth());
         assertEquals(7, rectangle.getHeight());
